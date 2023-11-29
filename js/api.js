@@ -25,9 +25,7 @@ async function getPokemon() {
     }
 }
 
-async function fetchPokemonData(pokemon) {
-    const response = await fetch(pokemon.url);
-    return await response.json();
+
 }
 
 function generateCharacterCards(pokemonData) {
