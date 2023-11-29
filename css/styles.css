@@ -27,13 +27,13 @@ h2 {
 
 nav a {
   font-size: 18px;
-  color: #fff;
+  color: #121111;
   text-decoration: none;
   margin: 0 15px;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #ec1111;
 }
 
 nav ul {
@@ -55,28 +55,6 @@ main {
   justify-content: center;
 }
 
-footer {
-  display: flex;
-  background-color: #ba3d07;
-  padding: 10px;
-  text-align: center;
-  border-top: 4px solid white;
-}
-
-footer h2 {
-  color: #fff;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 80%;
-}
-
-footer li {
-  display: block;
-}
 
 .row {
   display: flex;
@@ -117,7 +95,7 @@ footer li {
 
 .character-card button {
   background-color: #e92d2d;
-  color: #fff;
+  color: #0c0c0c;
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
@@ -131,12 +109,12 @@ footer li {
 }
 
 #back-to-list-button:hover {
-  background-color: #cc5200;
+  background-color: #3c1616;
 }
 
 #back-to-list-button {
-  background-color: #e92d2d;
-  color: #fff;
+  background-color: #3c1616;
+  color: #0f0e0e;
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
@@ -151,7 +129,7 @@ footer li {
 .modal {
   background-color: black;
   padding: 25px;
-  border: #e92d2d solid 3px;
+  border: #4b183b solid 3px;
   margin: auto;
   position: fixed;
   top: 3%;
@@ -231,7 +209,7 @@ footer li {
 }
 
 .close-button {
-  background-color: #ff6600;
+  background-color: rgb(49, 28, 43);
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -242,7 +220,7 @@ footer li {
 }
 
 .close-button:hover {
-  background-color: #cc5200;
+  background-color: #b07c57;
 }
 
 #search-input {
@@ -252,12 +230,12 @@ footer li {
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #000;
-  color: #ff6600;
+  background-color: #070606;
+  color: #745038;
 }
 
 #search-button {
-  background-color: #ff6600;
+  background-color: #d494c8;
   color: #fff;
   font-family: 'Press Start 2P', cursive;
   border: none;
@@ -270,12 +248,12 @@ footer li {
 }
 
 #search-button:hover {
-  background-color: #cc5200;
+  background-color: #674025;
   color: #fff;
 }
 
 .error-message {
-  color: #ff6600;
+  color: rgb(211, 137, 175);
   font-weight: bold;
   font-size: 14px;
   margin-top: 10px;
