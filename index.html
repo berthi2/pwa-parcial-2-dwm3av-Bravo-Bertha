@@ -6,11 +6,12 @@
   <link rel="icon" href="img/32x32.png" type="image/png">
   <title> - DWM3AP - 2023</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <header>
     <img src="img/icon.png" alt="logo de pagina67">
-    <h1>Mundo Pokemon</h1>
+    <h1>Mundo Pokémon</h1>
     <nav>
       <ul>
         <li>
@@ -19,6 +20,14 @@
         </li>
         <li>
           <a href="#" id="favoritos-link">Favoritos</a>
+        </li>
+        <li>
+          <button type="button" id="share" class="share">Compartir</button>
+        </li>
+        <li>
+          <div class="agregar-alerta">
+            <button class="mensaje">Instalar</button>
+        </div>
         </li>
       </ul>
     </nav>
@@ -38,7 +47,10 @@
   <div id="modal" class="modal">
   </div>
 
+  
 
   <script src="js/api.js"></script>
+  <script src="serviceworker.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

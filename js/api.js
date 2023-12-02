@@ -1,13 +1,4 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('js/serviceworker.js')
-    .then(function(registration) {
-      console.log('Service Worker registrado con éxito:', registration);
-      console.log('El registro del ServiceWorker fue exitoso, tiene el siguiente alcance: ', registration.scope)
-    })
-    .catch(function(error) {
-      console.error('Error al registrar el Service Worker:', error);
-    });
-}
+
 const characterCardsContainer = document.querySelector('.character-cards');
 const modal = document.getElementById('modal');
 const API = 'https://pokeapi.co/api/v2/pokemon';
