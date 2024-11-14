@@ -322,3 +322,74 @@ main {
     width: 100%;
   }
 }
+
+#reportar-bug-link {
+  text-align: right;
+  margin-right: 50px;
+}
+
+
+/* -------------------- */
+
+.form-container {
+  background-color: #f6e58d;
+  border: 4px solid #6ab04c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  color: #30336b;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #30336b;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 2px solid #30336b;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-button {
+  background-color: #eb4d4b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form-button:hover {
+  background-color: #e84118;
+}
+
+.form-button:active {
+  background-color: #c23616;
+}

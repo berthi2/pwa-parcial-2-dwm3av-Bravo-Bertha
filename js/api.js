@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('js/serviceworker.js')
+    navigator.serviceWorker.register('serviceworker.js')
     .then(function(registration) {
       console.log('Service Worker registrado con éxito:', registration);
       console.log('El registro del ServiceWorker fue exitoso, tiene el siguiente alcance: ', registration.scope)
@@ -7,13 +7,31 @@ if ('serviceWorker' in navigator) {
     .catch(function(error) {
       console.error('Error al registrar el Service Worker:', error);
     });
+
+    
+    //Solicitar permisos de notification
+    if ('Notification' in window && navigator.serviceWorker) {
+        Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+                console.log('Permiso de notificación concedido');
+            } else {
+                console.log('Permiso de notificación denegado');
+            }
+        });
+    }
 }
 const characterCardsContainer = document.querySelector('.character-cards');
 const modal = document.getElementById('modal');
 const API = 'https://pokeapi.co/api/v2/pokemon';
 
+
 async function getPokemon() {
     try {
+
+        //Prueba para visualizar funcionamiento de async/await
+        //var esperarHasta = new Date().getTime() + 20000;
+        //while(new Date().getTime() < esperarHasta) continue;
+        
         const response = await fetch(`${API}?limit=20`);
         const data = await response.json();
         const pokemonList = data.results;

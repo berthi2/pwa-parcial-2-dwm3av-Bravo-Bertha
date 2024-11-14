@@ -12,35 +12,27 @@
   <header>
     <img src="img/icon.png" alt="logo de pagina67">
     <h1>Mundo Pokemon</h1>
-    <nav>
-      <ul>
-        <li>
-          <input type="text" id="search-input" placeholder="Buscar...">
-          <button id="search-button">Buscar</button>
-        </li>
-        <li>
-          <a href="#" id="favoritos-link">Favoritos</a>
-        </li>
-      </ul>
-    </nav>
+    <h3><a href="index.html">Volver</a></h3>
+    <div>
+      <h3>Reportar Bug</h3>
+      <form onsubmit="return false">
+        <label for="mail" class="form-label">Correo:</label>
+        <input id="mail" class="form-input" type="email" placeholder="Inserte aquí su correo" required />
+        <br/>
+        
+        <label for="descripcionBug" class="form-label">Descripción:</label>
+        <textarea id="descripcionBug" class="form-textarea" placeholder="Inserte aquí la descripción del bug encontrado" required></textarea>
+        <br/>
+  
+        <button id="reportar-bug-button" class="form-button" onclick="reportarBug()">Reportar bug</button>
+      </form>
+    </div>
   </header>
 
   <main>
-    <div class="row character-cards">
-    </div>
-
-    <div id="button-container">
-      <button id="back-to-list-button" style="display: none;">Volver al listado</button>
-    </div>
-
-    <div id="error-message" class="error-message"></div>    
   </main>
 
-  <div id="modal" class="modal">
-  </div>
-
   <footer id="piedepagina" class="piedepagina">
-    <h3 id="reportar-bug-link"><a href="report-bug.html">Reportar Bug</a></h3>
   </footer>
 
   <script type="module">
@@ -87,7 +79,6 @@
     // Llama a signInWithPhone cuando quieras iniciar sesión con el teléfono
     //signInWithPhone();
   </script>
-  <script src="js/api.js"></script>
   <script src="js/reportarbug.js"></script>
 </body>
 </html>
